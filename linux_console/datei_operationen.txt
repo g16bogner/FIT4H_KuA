@@ -1,10 +1,42 @@
 cd
+	#ermöglicht das Navigieren innerhalb des Dateisystems
+	cd ..
+		navigiert eine Ebene im Pfad zurück
+	cd ~
+		~ steht für /home/pan
+	cd Dokumente
+		relativer Pfad: vom aktuellen Standort aus 
+	cd /home/pan/Downloads
+		absolute Pfad: von der Wurzel / des Dateisystems anfangend
 
 mkdir
+	mkdir verzeichnis_01
+		#erzeugt ein UnterVerzeichnis im aktuellen Verzeichnis
+	mkdir /home/pan/Dokumente/verzeichnis_02
+		#Verzeichnis mit absoluter Pfadangabe erzeugt
+
+touch
+	touch datei_name
+		#erstellt im aktuellen Verzeichnis die Datei datei_name
 
 ls
+	#erzeugt eine Verzeichnis- und Datei-Ausgabe
+	ls -lat
+		-a: alles anzeigen, auch die versteckten Dateien u. Ordner
+		-l: long, also viel Info
+		-t: sortiert nach Zeit, jüngstes Datum oben
 
 cp
+	cp quelle ziel
+	cp datei03 datei04
+		#die existierende datei03 wird als datei04 im aktuellen Verzeichnis neu erzeugt, oder überschrieben
+	cp datei03 ~/Dokumente/datei03
+		#die Datei wird ins Verzeichnis Dokumente kopiert
+	cp -r verzeichnis1 verzeichnis2
+		#beim Kopieren von Verzeichnissen muss der Schalter-r angegeben werden. Dann wird ein Quell-Verzeichnis (verzeichnis1) mit allen Unterordnern und Dateien an das Ziel (verzeichnis2) kopiert
+	cp *.txt unterverzeichnis/
+		#kopiert alle Dateien mit der Endung .txt in das Ziel (unterverzeichnis)
+		# der Asterisk (*) steht für beliebig viele Zeichen
 
 rm
 	#löscht Dateien und Verzeichnisse
@@ -12,3 +44,25 @@ rm
 	rm -rf eup_fit2ah
 		#-r rekursive: von hier an, alle Verzeichnisse
 		#-f	force: alles wird ohne Nachfrage gelöscht
+
+mv
+	mv quelle ziel
+		#der Befehl wird zum Umbenennen und zum Verschieben von Dateien und Ordnern benutzt
+
+less
+	less datei_name
+		#zeigt die Datei datei_name seitenweise an.
+		#weiterblättern mit der Leertast
+		#beenden mit q
+
+ln 
+	ln quelle ziel
+		#Es wird mit dem Befehl ln ein Link auf eine Datei erzeugt.
+		Damit wird in dem Inode-Table der Festplatte ein Verweis zwischen dem Namen <ziel> und der schon exitierenden Datei <quelle> erzeugt.
+		#Wird die Datei <ziel> geändert, ändert sich somit auch die Datei <quelle>
+		#Hardlink
+		#Wird benötigt bei der Installation von komplexen Programmen. Es wird dann ein Verweis auf die Programme im System erstellt, die das zu installierende Programm benötigt
+
+	ln -s quelle ziel
+		#symbolische Link
+		#ein Verzeichnis oder eine Quelle außerhalb der Festplatte können so integriert werden

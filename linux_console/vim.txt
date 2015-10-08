@@ -1,0 +1,22 @@
+****Befehle zum Wechsel in den Eingabemodus
+i 		#Einfügen vor der aktuellen Cursorposition
+a 		#Einfügen nach der Cursorposition
+I 		#Zeilenanfang
+A 		#Zeilenende
+
+****Löschbefehle***********************
+dd		#löscht ganze Zeile
+p			#fügt Puffer nach aktuellen Position ein
+u 		#macht letzten Befehl rückgängig
+
+****SPeichern**************************
+:wq 	#SPeichern und verlassen
+:q! 	#Verlassen ohne Speichern und Nachfrage		
+
+****Suchen*****************************
+/Suchmuster 	#sucht nach Suchmuster
+n 						#sucht weiter
+N 						#sucht zurück
+gg						#Dateianfang
+G 						#Dateiende
+100G					#springt in Zeile 100
