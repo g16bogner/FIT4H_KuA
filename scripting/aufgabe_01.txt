@@ -1,0 +1,4 @@
+LegenSie ein Skript an, dass folgende Aufgaben  erledigt:
+Legen Sie ein neues Verzeichnis an, wechseln Sie in das Verzeichnis und legen dort eine Datei an.
+Schreiben Sie einen Text in die Datei und veranlassen Sie das Skript, diesen Text anschließend auf der Konsole auszugeben.
+Lassen Sie folgende Infos auf der Konsole ausgeben: wer ist eingeloggt, Name des Benutzers, aktuelles Verzeichnis, Home Verzeichnis.

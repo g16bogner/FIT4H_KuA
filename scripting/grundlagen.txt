@@ -1,0 +1,16 @@
+#!/bin/bash
+	Shebang-Zeile am Anfang der Datei mit der Pfadangabbe des Interpreters
+
+echo
+	echo "Hanswurst"
+	#erzeugt eine Konsolenausgabe
+
+Die Datei ausführbar machen:
+	chmod +x NameDerDatei
+
+Aufruf der Datei
+	./test.sh
+		#es ist eine absolute Pfadangabe notwendig
+
+		
+
