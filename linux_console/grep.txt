@@ -7,3 +7,9 @@ Beispiel:
 
 	grep pna /etc/passwd
 		#in der Datei /etc/passwd wird nach dem Suchmuster: pna gesucht
+
+	grep '^[AS]' MrOlympia
+		#sucht am Anfang der Zeile (^) nach großem S oder A in der Datei Mr...
+
+	grep '\<Coleman\>' MrOlympia.dat
+		#sucht nach dem ganzen Wort (Leerzeichn am Anfang und Ende) Coleman

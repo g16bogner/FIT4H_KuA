@@ -1,0 +1,43 @@
+1. Erstellen Sie mit cat eine Datei Standorte und fuegen Sie folgende Orte hinzu:
+  Augsburg, 84341
+  Bremen, 25981
+  Friedrichshafen, 75544
+  Berlin 10000
+  Halle, 03035
+  Essen, 45678
+  Osnabrueck, 45679
+  Kempten, 78544
+
+  Du bist eine gemeine
+  Ganz Gemeine keine
+
+
+2. Geben Sie alle Zeilen aus, in den ein kleines a vorkommt
+  
+3.  Alle Zeilen, in den die Zeichenfolge hafen vorkommt
+  
+4. Alle Zeilen, bei denen der letzte Buchstabe ein n oder g ist
+  
+5. Alle Zeilen, bei denen ein Grossbuchstabe zwischen H und M vorkommt
+  
+6. Alle Zeilen mit grossem B am Anfang
+  
+7. Alle Zeilen mit einer 1 am Ende
+  
+8. Alle die im PLZ-Bereich 4567 liegen
+  
+9. Alle die im PLZ Bereich 7 liegen
+  
+10. Alle in denen kein Komma vorkommt
+  
+11. Wieviele Zeilen liegen im PLZ Bereich 7 
+
+12. Fuegen Sie der Datei Standorte eine Leerzeile hinzu und finden sie Leerzeilen
+  
+13. Alle Zeilen mit “eine”, aber nur als ganzes Wort
+  
+14. Zeige mit dem Befehl dmesg alle HDDs an
+  
+15. Liste mit dem Befehl ps aux alle terminator Prozesse auf
+
+  
