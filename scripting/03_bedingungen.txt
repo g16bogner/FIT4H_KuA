@@ -1,0 +1,25 @@
+$eingabe="q"
+if [[ $eingabe == 'p' ]]
+then
+	echo "Gut gemacht mit dem p"
+elif [[ $eingabe == 'q' ]]
+then
+	echo "Ein q !!! Wie cool."
+else
+	echo "zu schwierig mit p?"
+fi
+
+Bedingungen:
+STRING:
+	[[ $bed ]] 					#gibt true wenn nicht leer
+	[[ $bed = "wert" ]]	#gibt true wenn Übereinstimmung
+
+ARITHMETRISCH
+	if [[ $eingabe -eq 60 ]]			# überprüft auf Gleichheit
+	elif [[ $eingabe -gt 40 ]]		# Überprüft ob größer als
+	elif [[ $eingabe -lt 20 ]]		# überprüft ob kleiner als
+
+DATEI:
+ if [[ -e $eingabe ]]		#gibt es die Datei?
+
+
