@@ -1,0 +1,4 @@
+Logins:
+Die Authentifizierungen rund um das System werden unter Ubuntu in der Datei authlog festgehalten. Um z.B. die letzten 30 Zeilen dieser Log-Datei zu sehen, geben Sie de nBefehl ein:
+	tail -n 30 /var/log/auth.log
+

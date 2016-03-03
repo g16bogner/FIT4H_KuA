@@ -1,0 +1,9 @@
+SSH konfigurieren
+	Die Konfigurationsdatei anpassen
+	sudo vim /etc/ssh/sshd_config
+		- Port 3333
+			#Standardport 22 in eine Nummer > 1024 und < 65535
+		- MaxAuthTries 1 + Firewall
+			#http://serverfault.com/questions/103626/what-is-the-maximum-port-number
+		-PermitRootLogin no
+

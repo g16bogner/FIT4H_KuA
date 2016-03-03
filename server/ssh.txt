@@ -1,0 +1,38 @@
+Die Verbindung zu einbem Server findet generell über SSH statt.
+
+SSH bietet eine Verschlüsslung und läuft über den Port 22.
+
+Linux bietet eine frei Servervariante: openssh
+
+Installation:
+	Prüfen bestehender Installation: ps xaf | grep sshd
+	sudo apt-get update
+	sudo apt-get install openssh-server
+
+Server starten:
+	sudo service ssh <reload|restart|start|stop>
+	sudo /etc/init.d/ssh <....>
+
+Clients:
+	a. Windows:
+		- der Standardclient zum Verbinden mit dem Server über Windows ist putty
+		- der Windows-Standardclient zum Kopieren von Dateien ist winscp
+	b. Linux
+		- die Verbindung zum Server ist mit jeder Konsole/terminal möglich
+
+Verbindung zwischen Client und Server:
+	ssh user_auf_server@ip-adresse
+	ssh user_auf_server@server-name.de
+	ssh server_name.de
+	ssh -p 3000 server_name  #spezieller Port
+
+Kopieren von Dateien/Verzeichnissen zum Server
+	scp quelle ziel
+	scp datei_zu_kopieren theo@servername:/home/theo
+	scp -r ordner_zu_kopieren theo@servername:/home/theo
+
+
+
+
+
+
