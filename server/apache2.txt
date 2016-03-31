@@ -1,0 +1,34 @@
+Installation:
+	sudo apt-get update
+	sudo apt-get install apache2
+	sudo apt-get install lynx
+
+Modul php5 hinzufügen
+	sudo apt-get install libapache2-mod-php5
+
+	Modul aktivieren:
+		sudo a2enmod php5
+
+	sudo service apache2 restart
+
+Virtuelle Webs
+	a. Verzeichnis anlegen
+		sudo mkdir /var/www/html/webneu
+		sudo vim /var/www/html/webneu/index.php
+			<?php phpinfo(); ?>
+		sudo chown -R www-data:www-data /var/www/html/webneu
+
+	b. Virtual Host konfigurieren
+		sudo vim /etc/apache2/sites-available/webneu.conf
+			<VirtualHost *:80>
+				ServerName webneu.r1-11a01srv.local
+				DocumentRoot /var/www/html/webneu
+			</VirtualHost>
+
+	c. VirtualHost aktivieren
+		sudo a2ensite webneu
+		sudo service apache2 reload
+
+	d. Testen
+
+

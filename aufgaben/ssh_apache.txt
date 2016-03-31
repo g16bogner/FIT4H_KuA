@@ -1,0 +1,13 @@
+1. Kopieren Sie oder legen Sie eine neue virtuelle Maschine an
+2. Installieren Sie SSH, erstellen eine direkte Verbindung zwischen Client und Server. Legen Sie einen neuen Benutzer an. Deaktivieren Sie den Zugriff auf Root von einem externen Rechner.
+3. Installieren Sie den Apache Webserver und einen konsolenbasierten Browser.
+4. Testen Sie den Webserver mit einem Browseraufruf
+5. Installieren Sie das php-Modul des Webservers
+6. Aktivieren Sie das Modul
+7. Legen Sie eine Seite an um die php-Installation zu testen
+8. Rufen Sie die Seite mit lynx auf
+9. Erstellen Sie zwei Virtuelle Hosts mit dem Namen kua und eup. Legen Sie dort jeweilse eine index.php mit einer Ausgabe 'Hallo EUP' bzw. 'Hallo KUA' an. Veranlassen Sie einen Reload des Webservers
+10. Die Webs sollen sowohl mit dem lynx, als auch über Ihre Desktop-Browser erreichbar sein
+Zusatz für schnelle:
+11. Konfigurieren Sie für Ihre diese second.ihr_server_name.local Seite einen webdav-Zugriff auf das Verzeichnis /var/www/second/images
+12. Konfigurieren Sie einen https Zugriff auf die Seite.

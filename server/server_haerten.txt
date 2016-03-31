@@ -6,4 +6,21 @@ SSH konfigurieren
 		- MaxAuthTries 1 + Firewall
 			#http://serverfault.com/questions/103626/what-is-the-maximum-port-number
 		-PermitRootLogin no
+			#der root-User kann sich nicht über ssh einloggen
+	#nach Änderungen an der Konfigurationsdatei:
+		sudo service ssh restart
 
+SSH-Login nur möglich über vorher definierte Rechner
+	Schlüssel auf Client (Desktop-Rechner)
+	ssh-keygen -t rsa -C "theo@gmx.de"
+		#Schlüssel des Clientrechners wird in der Datei
+		~/.ssh/id_rsa abgelegt
+	ssh-copy-id -i ~/.ssh/id_rsa.pub theo@rechnername
+
+	Konfigurationsdatei sshd_config:
+		PasswordAuthentication no
+	 	RSAAuthentication yes
+	 	PubkeyAuthentication yes
+
+Sicherheitslücken kontrollieren:
+	Es darf keinen User geben, der sich einloggen darf (/etc/passwd - dort letzter Eintrag pro Zeile), und der in der 	/etc/shadow zwischen dem ersten und dem zweiten Doppelpunkt nichts oder ein ! oder einen * stehten hat.
